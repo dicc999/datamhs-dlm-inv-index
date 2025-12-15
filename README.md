@@ -1,7 +1,7 @@
 # datamhs-dlm-inv-index
 Demi memenuhi tugas Pengantar Algoritma dan Struktur Data, maka dibuatlah repository ini. di dalam README terdapat cara kerja setiap fungsi yang ada dalam program ini.
 
-Berikut adalah cara kerja setiap fungi yan ada di dalam program ini:
+Berikut adalah cara kerja setiap fungsi yang ada di dalam program ini:
 +-------------------------+---------------------------+-------------------------------+-------------------------------------------------------------+
 | Nama Fungsi             | Input                     | Output                        | Proses Utama (Deskripsi Algoritma Singkat)                  |
 +-------------------------+---------------------------+-------------------------------+-------------------------------------------------------------+
