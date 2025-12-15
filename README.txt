@@ -23,3 +23,159 @@ Berikut adalah cara kerja setiap fungsi yang ada di dalam program ini:
 |                         |                           |                               | Hasil penjumlahan dibagi dengan jumlah mahasiswa            |
 |                         |                           |                               | untuk memperoleh nilai rata-rata.                           |
 +-------------------------+---------------------------+-------------------------------+-------------------------------------------------------------+
+
+#flowchart build_index()#
+
++-------+
+| START |
++-------+
+    |
+    v
++----------------------+
+| Kosongkan index      |
+| lulus & tidak lulus  |
++----------------------+
+    |
+    v
++----------------------+
+| Ambil data mahasiswa |
++----------------------+
+    |
+    v
++----------------------+
+| status_lulus == True?|
++----------------------+
+    | Yes                    | No
+    v                        v
++-------------------+   +------------------------+
+| Tambahkan ID ke   |   | Tambahkan ID ke        |
+| index lulus       |   | index tidak lulus      |
++-------------------+   +------------------------+
+            |
+            v
+     +----------------+
+     | Data habis?    |
+     +----------------+
+            |
+            v
+        +------+
+        | END  |
+        +------+
+
+#flowchart show_all_students()#
+
++-------+
+| START |
++-------+
+    |
+    v
++----------------------------+
+| Tampilkan seluruh data     |
+| mahasiswa                  |
++----------------------------+
+    |
+    v
++----------------------------+
+| Input pengguna (0)?        |
++----------------------------+
+    | Yes
+    v
++------+
+| END  |
++------+
+
+#flowchart search_student#
+
++-------+
+| START |
++-------+
+    |
+    v
++----------------------------+
+| Input student_id           |
++----------------------------+
+    |
+    v
++----------------------------+
+| student_id == 0 ?          |
++----------------------------+
+    | Yes                    | No
+    v                        v
++------+          +----------------------------+
+| END  |          | Cari student_id di data    |
++------+          +----------------------------+
+                              |
+                              v
+                  +----------------------------+
+                  | Data ditemukan?            |
+                  +----------------------------+
+                      | Yes            | No
+                      v                v
+        +---------------------+   +------------------------+
+        | Tampilkan data      |   | Tampilkan pesan        |
+        | mahasiswa           |   | tidak ditemukan        |
+        +---------------------+   +------------------------+
+                              |
+                              v
+                      (Kembali ke input)
+
+#flowchart show_passed_students()#
+
++-------+
+| START |
++-------+
+    |
+    v
++----------------------------+
+| Ambil daftar ID lulus      |
+| dari inverted index        |
++----------------------------+
+    |
+    v
++----------------------------+
+| Tampilkan data mahasiswa   |
+| yang lulus                 |
++----------------------------+
+    |
+    v
++----------------------------+
+| Input pengguna (0)?        |
++----------------------------+
+    | Yes
+    v
++------+
+| END  |
++------+
+
+#flowchart average_final_score()#
+
++-------+
+| START |
++-------+
+    |
+    v
++----------------------------+
+| Jumlahkan seluruh          |
+| final_score mahasiswa      |
++----------------------------+
+    |
+    v
++----------------------------+
+| Bagi total nilai dengan   |
+| jumlah mahasiswa           |
++----------------------------+
+    |
+    v
++----------------------------+
+| Tampilkan nilai rata-rata  |
++----------------------------+
+    |
+    v
++----------------------------+
+| Input pengguna (0)?        |
++----------------------------+
+    | Yes
+    v
++------+
+| END  |
++------+
